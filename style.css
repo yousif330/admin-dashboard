@@ -1,0 +1,123 @@
+:root {
+  --header: #fafafa;
+  --sidebar: #0c94d4;
+  --background: #cbd5e1;
+  font-size: 20px;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+}
+
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+}
+
+input, button, textarea, select {
+  font: inherit;
+}
+
+p, h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word;
+}
+
+#root, #__next {
+  isolation: isolate;
+}
+
+* {
+  padding: 0px;
+  margin: 0px;
+}
+
+body {
+  height: 100vh;
+}
+
+.container {
+  height: 100%;
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+  grid-template-rows: 0.5fr 0.5fr 5fr;
+}
+
+.header {
+  background-color: var(--header);
+  grid-column: 2 / -1;
+}
+
+.nav {
+  background-color: var(--header);
+}
+
+.sidebar {
+  background-color: var(--sidebar);
+  grid-column: 1 / 2;
+  grid-row: 1 / 4;
+  display: flex;
+  flex-direction: column;
+}
+
+.logo .place-holder {
+  width: 50px;
+  height: 50px;
+}
+
+.place-holder {
+  width: 30px;
+  height: 30px;
+}
+
+.logo .text {
+  color: var(--header);
+  font-family: "roboto";
+  font-size: 1.8rem;
+  font-weight: bold;
+  align-self: center;
+}
+
+.logo {
+  margin-top: 20px;
+  margin-left: 20px;
+  display: flex;
+  gap: 10px;
+  margin-bottom: 50px;
+}
+
+.options-1 {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin-bottom: 70px;
+}
+
+.op {
+  margin-left: 20px;
+  display: flex;
+  gap: 30px;
+}
+
+.op .text {
+  color: var(--header);
+  font-family: "roboto";
+  font-weight: bold;
+  font-size: 1.2rem;
+  align-self: center;
+}
+
+.sidebar img {
+  filter: invert(98%) sepia(94%) saturate(11%) hue-rotate(172deg) brightness(104%) contrast(96%);
+}
+
+.card-board {background-color: var(--background);
+}
