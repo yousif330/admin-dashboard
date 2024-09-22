@@ -54,6 +54,8 @@ body {
 .header {
   background-color: var(--header);
   grid-column: 2 / -1;
+  display: flex;
+  gap: 15%;
 }
 
 .nav {
@@ -119,5 +121,45 @@ body {
   filter: invert(98%) sepia(94%) saturate(11%) hue-rotate(172deg) brightness(104%) contrast(96%);
 }
 
-.card-board {background-color: var(--background);
+.card-board {
+  background-color: var(--background);
+}
+
+.search {
+  margin-left: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  gap: 15px;
+}
+
+.search input {
+  width: 100%;
+  border-style: none;
+  background-color: var(--background);
+  border-radius: 30px;
+}
+
+.header-list {
+  padding-top: 10px;
+}
+
+.header-list ul {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  gap: 30px;
+}
+
+.header-pic {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.header-name {
+  font-family: "roboto";
+  font-weight: bold;
 }
